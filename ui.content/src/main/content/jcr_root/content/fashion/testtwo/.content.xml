@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:cloudserviceconfigs="[[]]"
+        cq:lastModified="{Date}2017-03-09T19:23:47.111+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/myproject/templates/fashionbasepage"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="about"
+        sling:resourceType="myproject/components/structure/basepagecomponent">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <aboutcomponent
+                jcr:created="{Date}2017-02-27T21:51:10.876+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-02-27T21:54:50.292+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/content/aboutcomponent"
+                h1text="About Me"
+                h2text="This is subtitle of article"
+                ImagePath="/content/dam/fashion/images/post3-big.jpg"
+                para="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero ">
+                <image
+                    jcr:lastModified="{Date}2017-02-27T21:54:50.292+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"/>
+            </aboutcomponent>
+            <horizantalcomponent
+                jcr:created="{Date}2017-03-01T20:46:03.866+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-03-01T20:48:50.241+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/content/horizantalcomponent"
+                ImagePath="/content/dam/fashion/images/banner-horizontal.jpg">
+                <image
+                    jcr:lastModified="{Date}2017-03-01T20:48:50.241+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"/>
+            </horizantalcomponent>
+        </par>
+        <section jcr:primaryType="nt:unstructured">
+            <par
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys">
+                <aboutcomponent
+                    jcr:created="{Date}2017-03-08T16:46:07.100+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-03-08T16:46:07.100+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/content/aboutcomponent"/>
+                <newsonesidecomponent
+                    jcr:created="{Date}2017-03-08T16:46:17.637+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-03-09T19:23:47.104+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/content/newsonesidecomponent"
+                    ImagePath="/content/dam/fashion/images/banner-horizontal.jpg">
+                    <image
+                        jcr:lastModified="{Date}2017-03-09T19:23:47.104+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"/>
+                </newsonesidecomponent>
+            </par>
+        </section>
+    </jcr:content>
+</jcr:root>

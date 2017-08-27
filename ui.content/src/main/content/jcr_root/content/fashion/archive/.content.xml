@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-03-09T15:52:56.341+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/myproject/templates/fashionbasepage"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Archive Page"
+        sling:resourceType="myproject/components/structure/basepagecomponent">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <textimagects_copy
+                jcr:created="{Date}2017-03-08T11:24:58.367+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-03-08T12:46:18.610+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/content/textimagects"
+                ctalink="/content/fashion/testtwo"
+                ctatext="Click Here For Next...."
+                date="08"
+                h2text="This is CTA page"
+                ImagePath="/content/dam/fashion/images/post1-big.jpg"
+                mon="Mar"
+                para="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat...Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat...">
+                <image
+                    jcr:lastModified="{Date}2017-03-08T12:46:18.610+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"/>
+            </textimagects_copy>
+            <sidebanner
+                jcr:created="{Date}2017-03-08T12:18:23.441+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2017-03-08T12:18:23.441+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/content/sidebanner"/>
+        </par>
+        <section
+            jcr:lastModified="{Date}2017-03-08T16:23:44.813+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="myproject/components/content/section"
+            section="article-section">
+            <par
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys">
+                <textimagects_copy_co_1841980456
+                    jcr:created="{Date}2017-03-08T11:24:58.367+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-03-08T18:59:23.745+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/content/textimagects"
+                    ctalink="/content/fashion/testtwo"
+                    ctatext="Click Here For Next...."
+                    date="08"
+                    h2text="This is CTA page"
+                    ImagePath="/content/dam/fashion/images/post1-big.jpg"
+                    imageReq="on"
+                    mon="Mar"
+                    para="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat...Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat...">
+                    <image
+                        jcr:lastModified="{Date}2017-03-08T18:59:23.745+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"/>
+                </textimagects_copy_co_1841980456>
+                <textimagects
+                    jcr:created="{Date}2017-03-08T16:28:30.226+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-03-08T18:59:05.347+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/content/textimagects"
+                    ctalink="/content/fashion/contactme"
+                    ctatext="Click Here For Next...."
+                    date="08"
+                    h2text="Amazing fashion blog"
+                    ImagePath="/content/dam/fashion/images/post2-big.jpg"
+                    imageReq="on"
+                    mon="Mar"
+                    para="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat...">
+                    <image
+                        jcr:lastModified="{Date}2017-03-08T18:59:05.347+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"/>
+                </textimagects>
+                <textimagects_1035908821
+                    jcr:created="{Date}2017-03-08T18:59:54.798+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-03-08T19:08:02.264+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/content/textimagects"
+                    ctalink="/content/fashion/testtwo"
+                    ctatext="dgddg"
+                    date="sdg"
+                    h2text="sdgsdgdfsg"
+                    ImagePath="/content/dam/fashion/images/post3-big.jpg"
+                    mon="sdgs"
+                    para="sgdddddddddddddddddddggggggggggggggggggggggggggggddddddddddddddddd">
+                    <image
+                        jcr:lastModified="{Date}2017-03-08T19:08:02.264+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"/>
+                </textimagects_1035908821>
+                <textimagects_254942254
+                    jcr:created="{Date}2017-03-09T15:52:56.141+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-03-09T15:52:56.141+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/content/textimagects"/>
+            </par>
+        </section>
+    </jcr:content>
+</jcr:root>

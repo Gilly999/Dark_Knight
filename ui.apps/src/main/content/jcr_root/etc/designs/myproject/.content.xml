@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-03-08T11:16:15.994+05:30"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="myproject Design"
+        sling:resourceType="wcm/core/components/designer">
+        <page jcr:primaryType="nt:unstructured">
+            <par
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys"
+                components="[group:myProjectComponents]">
+                <colctrl
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/content/colctrl"
+                    layouts="2;cq-colctrl-lt0&#x9;2 Columns (50%, 50%)"/>
+                <cq:authoring jcr:primaryType="nt:unstructured">
+                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="image/*"
+                            droptarget="image"
+                            resourceType="myproject/components/content/image"
+                            type="Images"/>
+                    </assetToComponentMapping>
+                </cq:authoring>
+            </par>
+            <logo
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/structure/logo"
+                absParent="2">
+                <image/>
+            </logo>
+        </page>
+        <basepagecomponent jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="{Date}2017-03-06T18:28:52.201+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                components="[group:General,group:fashion-group]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+            <sidepar
+                jcr:lastModified="{Date}2017-02-27T20:31:08.545+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                components="group:fashion-group">
+                <section jcr:primaryType="nt:unstructured"/>
+            </sidepar>
+            <gheader
+                jcr:lastModified="{Date}2017-03-08T11:06:02.915+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/global/gheader"
+                enterhighlightedtext="Site"
+                fbresponcetexturl="https://www.facebook.com/myresponsee"
+                h1title="free fashion blog template"
+                logotext="Fashion"
+                twitterurl="https://twitter.com/MyResponsee"/>
+            <gfooter
+                jcr:lastModified="{Date}2017-03-08T11:16:15.985+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="myproject/components/global/gfooter"
+                copyright="Copyright 2015, Vision Design - graphic zoo"
+                designtext="Design and coding &lt;br> by Responsee Team"
+                designtexturl="http://www.myresponsee.com/"
+                privatetext="All images is purchased from Bigstock. Do not use the image in your website."/>
+        </basepagecomponent>
+    </jcr:content>
+    <clientlib-all/>
+    <clientlib-site/>
+    <favicon.ico/>
+    <fashion-design/>
+</jcr:root>

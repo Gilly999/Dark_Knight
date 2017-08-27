@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-03-08T17:11:20.576+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/myproject/templates/fashionbasepage"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Contact"
+        sling:resourceType="myproject/components/structure/basepagecomponent">
+        <section
+            jcr:lastModified="{Date}2017-03-08T17:11:20.573+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="myproject/components/content/section"
+            section="article-section">
+            <par
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys">
+                <contactus
+                    jcr:created="{Date}2017-03-08T17:07:21.266+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-03-08T17:07:21.266+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/content/contactus"/>
+                <iframecomponent
+                    jcr:created="{Date}2017-03-08T17:07:47.924+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-03-08T17:08:17.026+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="myproject/components/content/iframecomponent"
+                    srcurl="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d682251.1123056135!2d17.063451638281247!3d48.09010461740988!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8cbf758ecb9f%3A0xddeb1d26bce5eccf!2sGallayova+2150%2F19%2C+841+02+D%C3%BAbravka%2C+Slovensk%C3%A1+republika!5e0!3m2!1ssk!2s!4v1412519122400"/>
+            </par>
+        </section>
+    </jcr:content>
+</jcr:root>

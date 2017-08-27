@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="These component describes is this section belongs to Home or article"
+    jcr:primaryType="cq:Component"
+    jcr:title="By using this section we can select weather the section belongs to home or Article"
+    componentGroup=".hidden"/>

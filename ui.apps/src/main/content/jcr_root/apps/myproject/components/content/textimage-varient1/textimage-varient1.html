@@ -1,0 +1,32 @@
+
+<sly data-sly-use.sample='com.myproject.services.core.use.SampleUse'>
+
+page path for use class is : ${sample.getPageValue}
+
+
+
+
+
+
+<!-- ARTICLE 1 -->               
+               <article class="post-1 line">
+                  <!-- image -->                 
+                  <div class="s-12 l-6 post-image">                   
+                     <a href="post-1.html">
+                     <img src="${properties.ImagePath}" alt="Fashion 1">
+                     </a>                
+                  </div>
+                  <!-- text -->                 
+                  <div class="s-12 l-5 post-text">
+                     <a href="post-1.html">
+                        <h2>${properties.h2text}</h2>
+                     </a>
+                     <p>${properties.para} </p>             
+
+                  </div>
+                  <!-- date -->                 
+                  <div class="s-12 l-1 post-date">
+                     <p class="date">${properties.date}</p>
+                     <p class="month">${properties.mon}</p>
+                  </div>
+               </article>
