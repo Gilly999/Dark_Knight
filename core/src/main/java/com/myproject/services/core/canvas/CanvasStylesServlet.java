@@ -1,4 +1,4 @@
-package com.myproject.services.canvas;
+/*package com.myproject.services.canvas;
 
 
 
@@ -285,4 +285,4 @@ public class CanvasStylesServlet
       this.revisionService = null;
     }
   }
-}
+}*/

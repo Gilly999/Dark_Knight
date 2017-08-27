@@ -45,6 +45,27 @@
                             artifactId2;inline=true
                         </Embed-Dependency>
                         -->
+                        
+                        <Import-Package>
+javax.inject;version=0.0.0,com.day.cq.replication;version="[6.0.0,7)",
+org.apache.sling.event.jobs;version="[1.5,2]",
+com.day.cq.workflow;version="[1.0,2)",
+com.day.cq.workflow.exec;version="[1.0,2)",
+com.day.cq.workflow.metadata;version="[1.0,2)",
+org.apache.sling.models.annotations;version="[1.1,2)",
+com.day.cq.commons.jcr;version="[5.7.0,7.0.0)",
+*
+</Import-Package>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         <Sling-Model-Packages>
                             com.myproject.services.core
                         </Sling-Model-Packages>
