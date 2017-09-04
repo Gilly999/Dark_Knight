@@ -1,5 +1,8 @@
 package com.myproject.services.core.iterator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.jcr.Node;
 import javax.jcr.NodeIterator;
 //import javax.jcr.sssNodeIterator;
@@ -27,16 +30,17 @@ class ChildNodeIterator extends WCMUse
 	
 	ResourceResolverFactory rrf ;
 	ResourceResolver resolver;
+	private List documents;
 
 @Override
 public void activate() throws RepositoryException 
 {
 	
 	final Logger log=LoggerFactory.getLogger(ChildNodeIterator.class);
-	
+	List<Node> documents = new ArrayList<Node>();
 	log.info("activate method");
 	// TODO Auto-generated method stub
-	
+log.debug("I am in child node iterator");	
 	Resource resource = resolver.getResource("/content/geometrixx/en");    
 	Node node = resource.adaptTo(Node.class);
 			 
@@ -45,7 +49,14 @@ public void activate() throws RepositoryException
 	{    
 	Node child = iterator.nextNode();    		   
 	log.debug("Child nodes are" + child );	
-	//return;
+	//return documents;
 	}
 }
+
+public List  ChildNode() {
+	return documents;
+} 
+
+
+
 }

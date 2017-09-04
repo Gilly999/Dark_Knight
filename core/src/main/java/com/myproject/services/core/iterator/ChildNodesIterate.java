@@ -47,9 +47,6 @@ public class ChildNodesIterate implements IteratingNodes {
 		}
 		
 		
-		
-		
-		
 		//return null;
 	}
 
@@ -58,6 +55,5 @@ public class ChildNodesIterate implements IteratingNodes {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 }
 */
