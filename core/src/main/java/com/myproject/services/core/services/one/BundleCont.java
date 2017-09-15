@@ -1,4 +1,4 @@
-package com.myproject.services.core.services.one;
+/*package com.myproject.services.core.services.one;
 
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
@@ -21,3 +21,4 @@ public class BundleCont implements  {
 	}
 
 }
+*/
