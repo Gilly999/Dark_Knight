@@ -40,7 +40,7 @@ public void activate() throws RepositoryException
 	List<Node> documents = new ArrayList<Node>();
 	log.info("activate method");
 	// TODO Auto-generated method stub
-log.debug("I am in child node iterator");	
+	log.debug("I am in child node iterator");	
 	Resource resource = resolver.getResource("/content/geometrixx/en");    
 	Node node = resource.adaptTo(Node.class);
 			 
@@ -52,11 +52,7 @@ log.debug("I am in child node iterator");
 	//return documents;
 	}
 }
-
 public List  ChildNode() {
 	return documents;
 } 
-
-
-
 }
