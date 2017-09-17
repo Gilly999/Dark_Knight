@@ -1,0 +1,53 @@
+<sly data-sly-test='${wcmmode.edit}'>
+I am in Edit Mode Manikanta
+			</sly>
+
+
+
+<sly data-sly-test='${wcmmode.Preview}'>
+I am in Preview Mode Manikanta
+			</sly>
+
+
+
+<!-- ARTICLE 1 -->               
+               <article class="margin-bottom">
+                  <!-- text -->                 
+                  <div class="post-text">
+                     <h2>${properties.h2text}</h2>
+                     <div class="line">
+                        <div class="margin">
+                           <div class="s-12 l-6">
+                              <h4>${properties.h4text}</h4>
+                              <address>
+
+                                 <p><i class="icon-home icon"></i>${properties.address}</p>
+
+                                 <p><i class="icon-globe_black icon"></i>${properties.country} </p>
+
+                                 <p><i class="icon-mail icon"></i>${properties.emailid} </p>
+
+                              </address>
+                              <br />
+                              <h4>Social</h4>
+                              <p><i class="icon-facebook icon"></i> <a href="${properties.facebookurl}">${properties.facebookurl}</a></p>
+                              <p><i class="icon-facebook icon"></i> <a href="${properties.fbresponcetexturl}">${properties.fbresponsetext}</a></p>
+                              <p class="margin-bottom"><i class="icon-twitter icon"></i> <a href="${properties.twitterurl}">${Properties.twittertext}</a></p>
+                           </div>
+                           <div class="s-12 l-6">
+                              <h4>${properties.formtitle}</h4>
+                              <form class="customform" action="">
+                                 <div class="s-12"><input name="" placeholder="Your e-mail" title="${Properties.email}" type="text" /></div>
+                                 <div class="s-12"><input name="" placeholder="Your name" title="${Properties.name}" type="text" /></div>
+                                 <div class="s-12"><textarea placeholder="Your massage" name="${Properties.message}" rows="5"></textarea></div>
+                                 <button type="submit">${properties.submit}</button>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- MAP -->	
+                  <div id="map-block">  	  
+                     <sly data-sly-resource="{@path='iframecomponent', resourceType='myproject/components/content/iframecomponent'}"/>
+                  </div>
+               </article>

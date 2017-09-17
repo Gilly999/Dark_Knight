@@ -13,15 +13,16 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-
 .topnav {
-    float: right;
-    list-style: none;
+	float: right;
+	list-style: none;
 }
+
 .topnav__item {
-    float: left;
-    margin-left: 15px;
+	float: left;
+	margin-left: 15px;
 }
+
 .topnav__item--selected {
-    font-weight: bold;
+	font-weight: bold;
 }

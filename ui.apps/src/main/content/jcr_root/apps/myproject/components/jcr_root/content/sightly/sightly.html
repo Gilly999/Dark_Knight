@@ -1,0 +1,154 @@
+
+
+
+
+
+<!--  comments
+
+
+
+Part 1
+
+<div>currentPageName: ${currentPage.name}</div>
+
+<div data-sly-test="${wcmmode.edit}">Show this only in edit mode to the author</div>
+
+<div data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.developer}">
+    Show this to the author
+</div>
+<div data-sly-test="${!author}">
+    Not in author mode anymore..
+</div>
+
+<div data-sly-text="${currentPage.title}">Mock page title</div>
+
+
+
+<ol data-sly-list.child="${currentPage.listChildren}">
+	<li>Title of page:${child.title}</li>
+    <p>name: ${child.name}</p>
+</ol>
+
+<ul data-sly-list.child="${currentPage.listChildren}">
+    <li class="${ childList.odd ? 'odd' : 'even'}">${child.title}</li>
+</ul>
+
+component
+<div data-sly-resource="${'par' @ resourceType='foundation/components/parsys'}"> </div>
+
+<footer data-sly-resource="${'footer' @ resourceType='myproject/footer', wcmmode='disabled'}"></footer>
+
+${pageProperties.jcr:title || properties.title || "No TIt"}
+
+
+
+init.jsp
+
+<div data-sly-include="/libs/wcm/core/components/init/init.jsp"></div>
+/libs/wcm/core/components/init/init.jsp
+
+
+        comments end				
+
+
+  comments start
+
+Part 2
+<article data-sly-list="${currentPage.listChildren}">
+<section>
+        <h1>${item.title}</h1>
+        <h2>${item.properties.subtitle}</h2>
+        <h3 data-sly-test="${item.listChildren}">This page has subpages</h3>
+
+
+                <h3 data-sly-list="${item}"></h3>
+</section>
+</article>
+
+
+
+
+<sly data-sly-list="${currentPage.listChildren}">   
+			<h1>${item.title}</h1>
+            <h1>${item.lastModifiedBy}</h1>
+            <h1>${item.designPath}</h1>
+</sly>
+
+<ul data-sly-list="${currentPage.listChildren}">
+    <li data-sly-text="${item.title}">This is the first menu item</li>
+    <li data-sly-test><a href="#">This is the second menu item</a></li>
+    <li data-sly-test><a href="#">This is the third menu item</a></li>
+    <li data-sly-test><a href="#">This is the fourth menu item</a></li>
+</ul>
+--------------------------------------------------------------------------
+
+<div data-sly-test.valid="${pageProperties.title}">${pageProperties.title}</div>
+
+<div data-sly-test="${!valid && wcmmode.edit}">Please enter a title for this page</div>
+
+--------------------------------------------------------------------------------
+sample4.html
+------------
+<ul data-sly-list.child="${currentPage.listChildren}" data-sly-unwrap>
+    <li>${child.title}</li>
+</ul>
+
+--------------------------------------------------------------------------------
+
+sample5.html
+-----------
+<sly data-sly-list.child="${currentPage.listChildren}">
+    <li>${child.title}</li>
+</sly>
+
+--------------------------------------------------------------------------------
+sample6.html
+-------------
+<li data-sly-repeat.child="${currentPage.listChildren}">${child.title}</li>
+
+--------------------------------------------------------------------------------
+sample7.html
+------------
+<ul data-sly-list-child="${currentPage.listChildren}" data-sly-unwrap="${wcmmode.edit}">
+    <li>${child.title}</li>
+</ul>
+--------------------------------------------------------------------------------
+
+
+sample8.html
+------------
+<div data-sly-use="com.myproject.MyComponent">
+    <h1>${comp1.myTitle}</h1>
+</div>
+
+
+--------------------------------------------------------------------------------
+
+<div data-sly-test="${properties.jcr:title == 'test'}">TEST</div>
+
+<sly data-sly-list.child="${currentPage.listChildren}">
+    <li>${child.title}</li>
+</sly>
+
+
+
+<div data-sly-test="${properties.jcr:title == 'test'}">TEST</div>
+<div data-sly-test="${properties.jcr:title != 'test'}">NOT TEST</div>
+
+
+
+<div data-sly-test="${properties['jcr:title'].length > 3}">Title is longer than 3</div>
+<div data-sly-test="${properties['jcr:title'].length >= 0}">Title is longer or equal to zero </div> 
+
+<div data-sly-test="${properties['jcr:title'].length > aemComponent.MAX_LENGTH}">
+    Title is longer than the limit of ${aemComponent.MAX_LENGTH}
+</div>
+----------------------------------------------------------------------------------
+
+use-class
+
+<div data-sly-use.myComponent="${'com.myproject.services.core.use.MyComponent' @ param1=1, param2=2}">
+    ${myComponent.calculatedValue}
+</div>
+
+-->

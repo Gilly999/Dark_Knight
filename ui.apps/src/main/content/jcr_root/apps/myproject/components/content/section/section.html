@@ -1,18 +1,21 @@
-<section id="${properties.section}" class="line" ${(properties.section == 'archive')? archive=''}> 
+<section id="${properties.section}" class="line" ${(properties.section==
+	'archive')? archive=''}>
 
-         <div class="margin">
-            <!-- ARTICLES -->             
-            <div class="s-12 l-9">
+	<div class="margin">
+		<!-- ARTICLES -->
+		<div class="s-12 l-9">
 
-            		<div data-sly-resource="${@path='par', resourceType='wcm/foundation/components/parsys'}">
-                    </div>
-            </div>
+			<div
+				data-sly-resource="${@path='par', resourceType='wcm/foundation/components/parsys'}">
+			</div>
+		</div>
 
-            <!-- SIDEBAR -->             
-            <div class="s-12 l-3">
-               <aside>
-                  	<div data-sly-resource="${@path='sidepar', resourceType='wcm/foundation/components/parsys'}"/>
-               </aside>
-            </div>
-         </div>
-      </section>
+		<!-- SIDEBAR -->
+		<div class="s-12 l-3">
+			<aside>
+				<div
+					data-sly-resource="${@path='sidepar', resourceType='wcm/foundation/components/parsys'}" />
+			</aside>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,41 @@
+${currentStyle.navigation}
+              <sly data-sly-use.nav = 'com.myproject.services.core.use.HeaderNavigation'/>
+               <div class="top-nav">
+                  <p class="nav-text"></p>
+                  <a class="logo" href="#">            
+                  ${currentStyle.logoText}<span>${currentStyle.heightlightText}</span>
+                  </a>            
+                  <h1> ${currentStyle.h1Text}</h1>
+                  <ul class="top-ul right">
+                 <sly data-sly-test="${nav.getNav}">
+                 <sly data-sly-list="${nav.getNav}">
+                 <li>
+                 <a href="${item}.html">
+
+                 <sly data-sly-list="${nav.getNav[item]}">
+                 <sly data-sly-test="${itemList.first}">
+                 ${item}
+                   </sly>
+                 </sly>
+                 </a>
+                 </li>
+                   </sly>
+                 </sly>
+
+                     <div class="social right">	           
+                        <a target="_blank" href=" ${currentStyle.facebookUrl}">
+                        <i class="icon-facebook_circle icon2x"></i>
+                        </a>          
+                        <a target="_blank" href=" ${currentStyle.twitterurl}">
+                        <i class="icon-twitter_circle icon2x"></i>
+                        </a>          
+                     </div>
+                  </ul>
+               </div>
+
+
+
+
+
+
+
