@@ -2,7 +2,7 @@
 
 
 
-// canva component
+// canvas component
 import com.adobe.granite.ui.components.ds.DataSource;
 import com.adobe.granite.ui.components.ds.EmptyDataSource;
 import com.adobe.granite.ui.components.ds.SimpleDataSource;

@@ -26,12 +26,6 @@ public class Practice_Demo {
 			{
 				return null;
 			}
-			
 			return path.getPath();
-	
-	}
-	
-	
-	
-	
+	}	
 }

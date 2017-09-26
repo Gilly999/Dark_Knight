@@ -14,6 +14,8 @@ import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.sling.jcr.api.SlingRepository;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
 import org.osgi.service.component.ComponentContext;
 import org.osgi.service.component.annotations.Deactivate;
 import org.slf4j.Logger;
@@ -21,8 +23,10 @@ import org.slf4j.LoggerFactory;
 
 @Component(immediate=true, metatype=true)
 @Service
-public class CommonServiceListener implements EventListener {
 
+
+public class CommonServiceListener implements EventListener {
+	public ServiceReference Bundle;
 	@Reference
 	SlingRepository repository;
 	private Session session=null;
@@ -82,6 +86,9 @@ public class CommonServiceListener implements EventListener {
 	public void activate(ComponentContext context)
 	{
 		
+		 Bundle =context.getServiceReference();
+		 
+		 log.debug("Bundle reference is " +Bundle);
 		//session=repository.loginAdministrative("crx.default");
 		
 		

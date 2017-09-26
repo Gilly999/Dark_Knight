@@ -37,27 +37,21 @@ public class DistanceImpl implements Distance {
                             throw new RuntimeException("Failed : HTTP error code : "
                                     + response.getStatusLine().getStatusCode());
                         }
- 
-            BufferedReader br = new BufferedReader(new InputStreamReader((response.getEntity().getContent())));
- 
+ BufferedReader br = 
+            new BufferedReader(new InputStreamReader((response.getEntity().getContent())));
             String output;
              String myJSON="" ;
                 while ((output = br.readLine()) != null) {
                     //System.out.println(output);
                     myJSON = myJSON + output;
-                }
- 
-              
+                }     
             httpClient.getConnectionManager().shutdown();
             return myJSON ;
         }
-         
         catch (Exception e)
         {
             e.printStackTrace() ; 
-        }
-         
+        }    
         return null;
     }
- 
 }*/
