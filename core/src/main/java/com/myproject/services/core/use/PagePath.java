@@ -13,7 +13,7 @@ import com.day.cq.wcm.api.designer.Design;
 import com.day.cq.wcm.api.designer.Style;
 
 public class PagePath extends WCMUse {
-	private String pageValue="";	
+	private String pageValue="";
 	private static final Logger log=LoggerFactory.getLogger(PagePath.class);
 
 	@Override
