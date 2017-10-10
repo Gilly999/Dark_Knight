@@ -72,3 +72,25 @@ public class DataSource_Servlet extends SlingAllMethodsServlet {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
