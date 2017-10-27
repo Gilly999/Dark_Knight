@@ -43,8 +43,7 @@ import org.slf4j.LoggerFactory;
 @Component(immediate=true, metatype=true, label="Canvas Styles/Layouts", description="Stores and retrieves the styles/Layouts for Blogs in Canvas  ")
 @Service({Servlet.class})
 @Properties({@org.apache.felix.scr.annotations.Property(name="sling.servlet.methods", value={"POST"}, propertyPrivate=true), @org.apache.felix.scr.annotations.Property(name="sling.servlet.paths", value={"/bin/ceb/unauthenticatedservlet/canvasStyles"}, propertyPrivate=true), @org.apache.felix.scr.annotations.Property(name="sling.auth.requirements", value={"-/bin/ceb/unauthenticatedservlet/canvasStyles"}, propertyPrivate=true)})
-public class CanvasStylesServlet
-  extends SlingAllMethodsServlet
+public class CanvasStylesServlet extends SlingAllMethodsServlet
 {
   private static final long serialVersionUID = 7081816354877045838L;
   private static final String DOT_XLSX = ".xlsx";

@@ -53,7 +53,7 @@ public class SampleUse extends WCMUse
 		Design currentDesign=getCurrentDesign();
 		Style currentStyle=getCurrentStyle();
 		pageValue=page.getPath();		
-			
+	                     		
 		AdaptTo(resource,Node.class);
 		AEMApi(page);
 		SlingApi(resource, resourceResolver);
@@ -75,6 +75,8 @@ public class SampleUse extends WCMUse
 			Resolver.commit();
 			log.debug("****************************************");
 			log.debug("***********Reso API Stop**************");
+			
+			resource.getResourceResolver();
 
 		}
 		private void AEMApi(Page page) {
@@ -153,20 +155,8 @@ public class SampleUse extends WCMUse
 			  resourceNode.addNode("nodebyNodeAPI","nt:unstructured");
 			  resourceNode.addNode("nodebySlingAPI", "nt:unstructured");
 			  session.save();*/
-			  
-			  
+	
 			  log.debug("****************************************");
-			
-			
-			  
-			
-			
-			
-			
-			
-			
-			
-			
 			
 //		Node resourceNode=resource.adaptTo(Node.class);
 //		//log.debug("Resource--------Path : {}",resource.getPath());
