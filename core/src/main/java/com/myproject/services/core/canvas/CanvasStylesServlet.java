@@ -40,7 +40,7 @@ import org.json.JSONException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Component(immediate=true, metatype=true, label="Canvas Styles/Layouts", description="Stores and retrieves the styles/Layouts for Blogs in Canvas  ")
+@Component(immediate=true, metatype=true, label="Canvas Styles/Layouts", description="Stores and retrieves the styles/Layouts for Blogs in Canvas: ")
 @Service({Servlet.class})
 @Properties({@org.apache.felix.scr.annotations.Property(name="sling.servlet.methods", value={"POST"}, propertyPrivate=true), @org.apache.felix.scr.annotations.Property(name="sling.servlet.paths", value={"/bin/ceb/unauthenticatedservlet/canvasStyles"}, propertyPrivate=true), @org.apache.felix.scr.annotations.Property(name="sling.auth.requirements", value={"-/bin/ceb/unauthenticatedservlet/canvasStyles"}, propertyPrivate=true)})
 public class CanvasStylesServlet extends SlingAllMethodsServlet
@@ -130,7 +130,6 @@ public class CanvasStylesServlet extends SlingAllMethodsServlet
           }
         }
         DataSource ds = new SimpleDataSource(fakeResourceList.iterator());
-        
         request.setAttribute(DataSource.class.getName(), ds);
       }
     }
@@ -240,9 +239,7 @@ public class CanvasStylesServlet extends SlingAllMethodsServlet
       this.logger.error("{}", e);
     }
   }
-  
-  public JSONArray sortStyles(JSONArray stylesArray)
-    throws JSONException
+  public JSONArray sortStyles(JSONArray stylesArray)throws JSONException
   {
     JSONArray sortedJsonArray = new JSONArray();
     List<org.json.JSONObject> jsonValues = new ArrayList();
@@ -272,16 +269,14 @@ public class CanvasStylesServlet extends SlingAllMethodsServlet
     }
     return sortedJsonArray;
   }
-  
   protected void bindRevisionService(CEBRevisionService paramCEBRevisionService)
   {
     this.revisionService = paramCEBRevisionService;
   }
-  
   protected void unbindRevisionService(CEBRevisionService paramCEBRevisionService)
   {
     if (this.revisionService == paramCEBRevisionService) {
       this.revisionService = null;
     }
   }
-}*/
+}s*/
